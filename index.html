@@ -4,15 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#10b981">
-<title>HPCOD — Confirmé. Livré. Encaissé. | Cash on Delivery Guinée</title>
-<meta name="description" content="HPCOD — Le partenaire COD complet des e-commerçants en Guinée. Confirmation professionnelle, livraison express, collecte cash et CRM intégré.">
-<meta name="keywords" content="HPCOD, cash on delivery Guinée, livraison COD Conakry, confirmation commande Guinée, e-commerce Guinée livraison">
-<meta property="og:title" content="HPCOD — Confirmé. Livré. Encaissé.">
-<meta property="og:description" content="Le partenaire COD complet des e-commerçants guinéens. Confirmation + Livraison + CRM.">
+<title>HP GO — Commandez. Suivez. Recevez. | Livraison à la demande en Guinée</title>
+<meta name="description" content="HP GO — La super-app de livraison à la demande en Guinée. Restaurants, épicerie, pharmacie, boutiques, colis et courses livrés chez vous à Conakry et dans tout le pays. Paiement Mobile Money ou cash à la livraison, suivi en temps réel.">
+<meta name="keywords" content="HP GO, livraison Guinée, livraison Conakry, food delivery Guinée, restaurant livraison Conakry, pharmacie livraison, coursier Conakry, mobile money livraison, super app Guinée">
+<meta name="author" content="HP GO">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hpgo.gn/">
+<!-- Open Graph -->
+<meta property="og:title" content="HP GO — Commandez. Suivez. Recevez.">
+<meta property="og:description" content="La super-app de livraison à la demande en Guinée. Restaurants, épicerie, pharmacie, boutiques, colis et courses — livrés chez vous, suivi en temps réel.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="HP GO">
+<meta property="og:url" content="https://hpgo.gn/">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HP GO — Commandez. Suivez. Recevez.">
+<meta name="twitter:description" content="La super-app de livraison à la demande en Guinée. Tout ce dont vous avez besoin, livré chez vous.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='10' fill='%230f172a'/%3E%3Ctext x='6' y='30' font-family='Arial' font-weight='900' font-size='18' fill='%2310b981'%3EHP%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Données structurées SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HP GO",
+  "description": "Super-app de livraison à la demande en Guinée : restaurants, épicerie, pharmacie, boutiques, colis et courses.",
+  "url": "https://hpgo.gn/",
+  "logo": "https://hpgo.gn/assets/logo.jpeg",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Guinée"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+224621881210",
+    "contactType": "customer service",
+    "areaServed": "GN",
+    "availableLanguage": ["French"]
+  },
+  "sameAs": []
+}
+</script>
 <style>
 :root {
   --green: #10b981;
@@ -35,10 +71,15 @@ html{scroll-behavior:smooth;}
 body{font-family:'Inter',sans-serif;color:var(--text);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 a{text-decoration:none;color:inherit;}
 img{max-width:100%;display:block;}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px;border-radius:4px;}
+
+/* Skip link accessibilité */
+.skip-link{position:absolute;left:-999px;top:0;z-index:999;background:var(--green);color:#fff;padding:12px 20px;border-radius:0 0 8px 0;font-weight:700;font-size:.9rem;}
+.skip-link:focus{left:0;}
 
 /* ======= TICKER ======= */
 .ticker{background:var(--dark);height:38px;overflow:hidden;display:flex;align-items:center;}
-.ticker-inner{display:flex;gap:0;white-space:nowrap;animation:tick 30s linear infinite;}
+.ticker-inner{display:flex;gap:0;white-space:nowrap;animation:tick 32s linear infinite;}
 .ticker-inner span{font-size:.72rem;font-weight:600;color:rgba(255,255,255,.6);padding:0 2.5rem;letter-spacing:.06em;text-transform:uppercase;}
 .ticker-inner span strong{color:var(--gold);font-weight:800;}
 @keyframes tick{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
@@ -47,10 +88,10 @@ img{max-width:100%;display:block;}
 nav{background:#fff;border-bottom:1px solid var(--border);padding:0 5%;height:72px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:300;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:box-shadow .3s;}
 nav.scrolled{box-shadow:0 4px 20px rgba(0,0,0,.1);}
 .nav-brand{display:flex;align-items:center;gap:12px;}
-.nav-logo-svg{width:42px;height:42px;}
+.nav-logo-svg{width:44px;height:44px;}
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.1;}
-.nav-brand-text strong{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--dark);letter-spacing:1.5px;}
-.nav-brand-text span{font-size:.6rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.12em;}
+.nav-brand-text strong{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--dark);letter-spacing:2px;}
+.nav-brand-text span{font-size:.58rem;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.12em;}
 .nav-links{display:flex;gap:.2rem;list-style:none;align-items:center;}
 .nav-links a{color:var(--muted);font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:6px;transition:all .2s;text-transform:uppercase;letter-spacing:.04em;}
 .nav-links a:hover{color:var(--dark);background:var(--light);}
@@ -67,9 +108,9 @@ nav.scrolled{box-shadow:0 4px 20px rgba(0,0,0,.1);}
 
 /* ======= HERO ======= */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--dark);}
-.hero-bg{position:absolute;inset:0;background-image:url('assets/team-headsets.jpeg');background-size:cover;background-position:center top;opacity:.25;}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,23,42,.97) 0%,rgba(15,23,42,.7) 60%,rgba(16,185,129,.15) 100%);}
-.hero-content{position:relative;z-index:2;padding:0 5%;max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;padding-top:2rem;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 75% 30%,rgba(16,185,129,.18) 0%,transparent 55%),radial-gradient(ellipse at 10% 90%,rgba(245,158,11,.10) 0%,transparent 50%);}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(15,23,42,.6) 0%,rgba(15,23,42,.2) 100%);}
+.hero-content{position:relative;z-index:2;padding:0 5%;max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center;padding-top:2rem;}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);border-radius:100px;padding:6px 16px;margin-bottom:1.5rem;}
 .hero-badge-dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
@@ -78,23 +119,56 @@ nav.scrolled{box-shadow:0 4px 20px rgba(0,0,0,.1);}
 .hero h1 .t1{display:block;color:#fff;}
 .hero h1 .t2{display:block;color:#fff;}
 .hero h1 .t3{display:block;color:var(--green);-webkit-text-stroke:2px var(--green);}
-.hero-sub{font-size:1rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:2rem;max-width:480px;}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:2rem;max-width:480px;}
 .hero-sub strong{color:var(--gold);font-weight:700;}
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:2.5rem;}
 .btn-green{background:var(--green);color:#fff;padding:14px 28px;border-radius:10px;font-weight:700;font-size:.95rem;display:inline-flex;align-items:center;gap:8px;transition:all .2s;box-shadow:0 8px 24px rgba(16,185,129,.35);}
 .btn-green:hover{background:var(--green2);transform:translateY(-2px);}
 .btn-outline{border:2px solid rgba(255,255,255,.3);color:#fff;padding:14px 28px;border-radius:10px;font-weight:600;font-size:.95rem;display:inline-flex;align-items:center;gap:8px;transition:all .2s;}
 .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08);}
-.hero-trust{display:flex;align-items:center;gap:12px;font-size:.78rem;color:rgba(255,255,255,.4);}
-.hero-trust-badge{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.55);}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:16px;font-size:.78rem;color:rgba(255,255,255,.4);}
+.hero-trust-badge{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.6);}
 .hero-trust-badge svg{width:14px;height:14px;color:var(--green);}
-.hero-right{position:relative;}
-.hero-img-card{border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);position:relative;}
-.hero-img-card img{width:100%;height:420px;object-fit:cover;object-position:center top;}
-.hero-img-badge{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(15,23,42,.9);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:12px;}
-.hero-img-badge-icon{width:40px;height:40px;background:rgba(16,185,129,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
-.hero-img-badge-text{font-size:.82rem;color:rgba(255,255,255,.9);font-weight:600;line-height:1.4;}
-.hero-img-badge-text span{color:var(--green);}
+
+/* Phone mockup (visuel hero, 100% CSS) */
+.hero-right{position:relative;display:flex;justify-content:center;}
+.phone{width:300px;height:600px;background:var(--dark2);border-radius:42px;border:10px solid #000;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px rgba(16,185,129,.15);position:relative;overflow:hidden;}
+.phone-notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:120px;height:24px;background:#000;border-radius:0 0 16px 16px;z-index:5;}
+.phone-screen{position:absolute;inset:0;background:var(--light);display:flex;flex-direction:column;}
+.ph-top{background:var(--green);padding:46px 18px 16px;color:#fff;}
+.ph-top-row{display:flex;align-items:center;justify-content:space-between;}
+.ph-greet{font-size:.7rem;opacity:.85;}
+.ph-addr{font-size:.85rem;font-weight:800;display:flex;align-items:center;gap:5px;margin-top:2px;}
+.ph-bell{width:30px;height:30px;background:rgba(255,255,255,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;}
+.ph-search{margin-top:14px;background:#fff;border-radius:10px;padding:9px 12px;font-size:.72rem;color:var(--muted);display:flex;align-items:center;gap:7px;}
+.ph-body{padding:14px;overflow:hidden;flex:1;}
+.ph-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;}
+.ph-cat{background:#fff;border-radius:12px;padding:9px 4px;text-align:center;font-size:.52rem;font-weight:700;color:var(--dark);box-shadow:0 2px 6px rgba(0,0,0,.05);}
+.ph-cat span{display:block;font-size:1.05rem;margin-bottom:3px;}
+.ph-track{background:#fff;border-radius:14px;padding:13px;box-shadow:0 4px 14px rgba(0,0,0,.07);}
+.ph-track-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.ph-track-title{font-size:.68rem;font-weight:800;color:var(--dark);}
+.ph-track-eta{font-size:.6rem;font-weight:800;color:var(--green);background:var(--green3);padding:3px 8px;border-radius:100px;}
+.ph-map{height:96px;border-radius:10px;background:linear-gradient(135deg,#dbeafe,#d1fae5);position:relative;overflow:hidden;}
+.ph-route{position:absolute;top:50%;left:14%;right:14%;height:3px;background:repeating-linear-gradient(90deg,var(--green) 0 8px,transparent 8px 14px);transform:translateY(-50%);}
+.ph-pin{position:absolute;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;top:50%;transform:translateY(-50%);}
+.ph-pin.a{left:8%;background:var(--gold);color:#fff;}
+.ph-pin.b{right:8%;background:var(--dark);color:#fff;}
+.ph-rider{position:absolute;top:50%;left:30%;transform:translateY(-50%);font-size:1.1rem;animation:ride 3.4s ease-in-out infinite;}
+@keyframes ride{0%{left:18%;}50%{left:66%;}100%{left:18%;}}
+.ph-steps{display:flex;justify-content:space-between;margin-top:11px;}
+.ph-step{flex:1;text-align:center;font-size:.5rem;color:var(--muted);position:relative;}
+.ph-step.done{color:var(--green);font-weight:700;}
+.ph-step .dot{width:10px;height:10px;border-radius:50%;background:var(--border);margin:0 auto 4px;}
+.ph-step.done .dot{background:var(--green);}
+.hero-float{position:absolute;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 16px 40px rgba(0,0,0,.22);display:flex;align-items:center;gap:9px;}
+.hero-float-1{top:8%;left:-6%;animation:floaty 4s ease-in-out infinite;}
+.hero-float-2{bottom:9%;right:-7%;animation:floaty 4s ease-in-out infinite .8s;}
+@keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+.hero-float-ic{width:34px;height:34px;border-radius:9px;background:var(--green3);display:flex;align-items:center;justify-content:center;font-size:1rem;}
+.hero-float-t{font-size:.68rem;line-height:1.3;}
+.hero-float-t b{display:block;color:var(--dark);font-weight:800;font-size:.74rem;}
+.hero-float-t small{color:var(--muted);}
 
 /* ======= STATS BAR ======= */
 .stats-bar{background:var(--dark2);padding:2rem 5%;}
@@ -113,17 +187,18 @@ h2.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,4vw,
 h2.section-title span{color:var(--green);}
 .section-sub{font-size:1rem;color:var(--muted);line-height:1.7;max-width:560px;}
 
-/* ======= SERVICES ======= */
-.services-bg{background:var(--light);}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
-.service-card{background:#fff;border-radius:16px;padding:2rem;border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden;}
-.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--green);transform:scaleX(0);transition:transform .3s;transform-origin:left;}
-.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.1);border-color:var(--green);}
-.service-card:hover::before{transform:scaleX(1);}
-.service-icon{width:56px;height:56px;background:var(--green3);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:1.2rem;}
-.service-card h3{font-size:1.1rem;font-weight:800;color:var(--dark);margin-bottom:.6rem;}
-.service-card p{font-size:.88rem;color:var(--muted);line-height:1.6;}
-.service-price{display:inline-block;margin-top:1rem;background:var(--green3);color:var(--green2);font-weight:800;font-size:.82rem;padding:4px 12px;border-radius:100px;}
+/* ======= CATEGORIES ======= */
+.cats-bg{background:var(--light);}
+.cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
+.cat-card{background:#fff;border-radius:18px;padding:2rem;border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden;display:flex;flex-direction:column;}
+.cat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--green);transform:scaleX(0);transition:transform .3s;transform-origin:left;}
+.cat-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.1);border-color:var(--green);}
+.cat-card:hover::before{transform:scaleX(1);}
+.cat-icon{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-bottom:1.2rem;background:var(--green3);}
+.cat-card h3{font-size:1.15rem;font-weight:800;color:var(--dark);margin-bottom:.5rem;}
+.cat-card p{font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:1rem;flex:1;}
+.cat-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.cat-tag{font-size:.68rem;font-weight:700;color:var(--green2);background:var(--green3);padding:3px 10px;border-radius:100px;}
 
 /* ======= HOW IT WORKS ======= */
 .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;position:relative;}
@@ -134,93 +209,92 @@ h2.section-title span{color:var(--green);}
 .step-card h3{font-size:.95rem;font-weight:800;color:var(--dark);margin-bottom:.5rem;}
 .step-card p{font-size:.82rem;color:var(--muted);line-height:1.5;}
 
-/* ======= TRIO ECOSYSTEM ======= */
-.trio-bg{background:var(--dark);position:relative;overflow:hidden;}
-.trio-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(16,185,129,.08) 0%,transparent 70%);}
-.trio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
-.trio-card{border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2rem;transition:all .3s;position:relative;overflow:hidden;}
-.trio-card.active{border-color:var(--green);background:rgba(16,185,129,.05);}
-.trio-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(16,185,129,.04),transparent);opacity:0;transition:opacity .3s;}
-.trio-card:hover::after{opacity:1;}
-.trio-tag{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.15em;margin-bottom:.8rem;}
-.trio-card.active .trio-tag{color:var(--green);}
-.trio-tag-other{color:rgba(255,255,255,.3);}
-.trio-logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;margin-bottom:.5rem;}
-.trio-card.active .trio-logo{color:#fff;}
-.trio-logo-other{color:rgba(255,255,255,.5);}
-.trio-desc{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.6;margin-bottom:1.2rem;}
-.trio-card.active .trio-desc{color:rgba(255,255,255,.75);}
-.trio-features{display:flex;flex-direction:column;gap:6px;}
-.trio-feature{font-size:.78rem;color:rgba(255,255,255,.4);display:flex;align-items:center;gap:6px;}
-.trio-card.active .trio-feature{color:rgba(255,255,255,.65);}
-.trio-feature::before{content:'→';color:var(--green);font-size:.7rem;}
-.trio-connector{display:flex;align-items:center;justify-content:center;color:var(--green);font-size:1.5rem;font-weight:900;padding-top:3rem;}
+/* ======= TRACKING SHOWCASE ======= */
+.track-bg{background:var(--dark);position:relative;overflow:hidden;}
+.track-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 30%,rgba(16,185,129,.10) 0%,transparent 60%);}
+.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1;}
+.track-points{display:flex;flex-direction:column;gap:1.4rem;margin-top:2rem;}
+.track-point{display:flex;align-items:flex-start;gap:14px;}
+.track-point-icon{width:44px;height:44px;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+.track-point-text h4{font-size:1rem;font-weight:800;color:#fff;margin-bottom:3px;}
+.track-point-text p{font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.55;}
+.track-visual{display:flex;justify-content:center;}
+.track-map{width:100%;max-width:420px;background:var(--dark2);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:1.4rem;}
+.track-map-canvas{height:260px;border-radius:16px;background:linear-gradient(135deg,#1e3a5f,#0f3d2e);position:relative;overflow:hidden;}
+.tm-grid-line{position:absolute;background:rgba(255,255,255,.05);}
+.tm-route{position:absolute;top:50%;left:12%;right:12%;height:4px;background:repeating-linear-gradient(90deg,var(--green) 0 10px,transparent 10px 18px);transform:translateY(-50%);border-radius:4px;}
+.tm-pin{position:absolute;width:34px;height:34px;border-radius:50% 50% 50% 0;transform:rotate(-45deg) translateY(-50%);top:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.4);}
+.tm-pin span{transform:rotate(45deg);font-size:.9rem;}
+.tm-pin.start{left:8%;background:var(--gold);}
+.tm-pin.end{right:8%;background:var(--green);}
+.tm-rider{position:absolute;top:50%;transform:translateY(-50%);font-size:1.6rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,.4));animation:ride2 4s ease-in-out infinite;}
+@keyframes ride2{0%{left:16%;}50%{left:72%;}100%{left:16%;}}
+.track-map-info{display:flex;align-items:center;justify-content:space-between;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.08);}
+.tmi-rider{display:flex;align-items:center;gap:10px;}
+.tmi-av{width:40px;height:40px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.9rem;}
+.tmi-name{font-size:.82rem;font-weight:700;color:#fff;}
+.tmi-role{font-size:.68rem;color:rgba(255,255,255,.45);}
+.tmi-eta{text-align:right;}
+.tmi-eta-num{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--green);line-height:1;}
+.tmi-eta-lbl{font-size:.62rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em;}
 
-/* ======= SECTION CONFIRMATION (image) ======= */
-.confirm-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
-.confirm-img{border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.12);position:relative;}
-.confirm-img img{width:100%;height:460px;object-fit:cover;}
-.confirm-img-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(15,23,42,.9),transparent);padding:2rem;}
-.confirm-stat{color:#fff;}
-.confirm-stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--green);line-height:1;}
-.confirm-stat-lbl{font-size:.78rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;}
-.confirm-points{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem;}
-.confirm-point{display:flex;align-items:flex-start;gap:14px;}
-.confirm-point-icon{width:40px;height:40px;background:var(--green3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;margin-top:2px;}
-.confirm-point-text h4{font-size:.95rem;font-weight:800;color:var(--dark);margin-bottom:3px;}
-.confirm-point-text p{font-size:.82rem;color:var(--muted);line-height:1.5;}
+/* ======= AUDIENCES (Client / Livreur / Commerçant) ======= */
+.aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
+.aud-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:2.2rem;transition:all .3s;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.aud-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,0,0,.1);border-color:var(--green);}
+.aud-card.feat{background:var(--dark);border-color:var(--dark);}
+.aud-ic{width:58px;height:58px;border-radius:16px;background:var(--green3);display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:1.2rem;}
+.aud-card.feat .aud-ic{background:rgba(16,185,129,.18);}
+.aud-card h3{font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:.4rem;}
+.aud-card.feat h3{color:#fff;}
+.aud-card .aud-lead{font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:1.2rem;}
+.aud-card.feat .aud-lead{color:rgba(255,255,255,.6);}
+.aud-feats{display:flex;flex-direction:column;gap:9px;margin-bottom:1.6rem;flex:1;}
+.aud-feat{font-size:.84rem;color:var(--text);display:flex;align-items:flex-start;gap:8px;line-height:1.45;}
+.aud-card.feat .aud-feat{color:rgba(255,255,255,.78);}
+.aud-feat::before{content:'✓';color:var(--green);font-weight:800;flex-shrink:0;}
+.aud-btn{display:block;text-align:center;padding:13px;border-radius:10px;font-weight:700;font-size:.88rem;transition:all .2s;}
+.aud-btn-green{background:var(--green);color:#fff;box-shadow:0 6px 20px rgba(16,185,129,.3);}
+.aud-btn-green:hover{background:var(--green2);}
+.aud-btn-outline{border:1.5px solid var(--border);color:var(--dark);}
+.aud-card.feat .aud-btn-outline{border-color:rgba(255,255,255,.2);color:#fff;}
+.aud-btn-outline:hover{border-color:var(--green);color:var(--green);}
 
-/* ======= TARIFS ======= */
-.tarifs-bg{background:var(--dark);}
-.tarifs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
-.tarif-card{border-radius:20px;padding:2rem;border:1px solid rgba(255,255,255,.08);transition:all .3s;position:relative;overflow:hidden;}
-.tarif-card.featured{border-color:var(--green);background:rgba(16,185,129,.05);}
-.tarif-card.featured::before{content:'⭐ POPULAIRE';position:absolute;top:0;right:0;background:var(--green);color:#fff;font-size:.65rem;font-weight:800;padding:4px 14px;border-radius:0 20px 0 12px;letter-spacing:.08em;}
-.tarif-name{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:.5rem;}
-.tarif-card.featured .tarif-name{color:var(--green);}
-.tarif-price{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:#fff;line-height:1;margin-bottom:.3rem;}
-.tarif-price span{font-size:1rem;font-weight:400;color:rgba(255,255,255,.4);}
-.tarif-desc{font-size:.82rem;color:rgba(255,255,255,.45);margin-bottom:1.5rem;line-height:1.5;}
-.tarif-features{display:flex;flex-direction:column;gap:8px;margin-bottom:2rem;}
-.tarif-feature{display:flex;align-items:center;gap:8px;font-size:.83rem;color:rgba(255,255,255,.6);}
-.tarif-feature.ok::before{content:'✓';color:var(--green);font-weight:800;}
-.tarif-feature.no{opacity:.35;}
-.tarif-feature.no::before{content:'✗';color:rgba(255,255,255,.3);}
-.tarif-btn{display:block;text-align:center;padding:12px;border-radius:10px;font-weight:700;font-size:.88rem;transition:all .2s;}
-.tarif-btn-outline{border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.7);}
-.tarif-btn-outline:hover{border-color:#fff;color:#fff;}
-.tarif-btn-green{background:var(--green);color:#fff;box-shadow:0 6px 20px rgba(16,185,129,.3);}
-.tarif-btn-green:hover{background:var(--green2);}
-
-/* ======= COMPARATIF ======= */
-.compare-table{width:100%;border-collapse:collapse;margin-top:2.5rem;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.06);}
-.compare-table th{background:var(--dark);color:#fff;padding:14px 16px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-align:center;}
-.compare-table th:first-child{text-align:left;}
-.compare-table th.hpcod-col{background:var(--green);color:#fff;}
-.compare-table td{padding:13px 16px;border-bottom:1px solid var(--border);font-size:.85rem;text-align:center;color:var(--text);}
-.compare-table td:first-child{text-align:left;font-weight:600;color:var(--dark);}
-.compare-table tr:last-child td{border-bottom:none;}
-.compare-table tr:hover td{background:#f8fafc;}
-.compare-table td.hpcod-col{background:rgba(16,185,129,.05);font-weight:700;color:var(--green2);}
-.chk{color:var(--green);font-weight:800;font-size:1rem;}
-.cross{color:#ef4444;font-size:.9rem;}
-.partial{color:var(--gold);font-size:.85rem;}
+/* ======= PRICING (transparence frais) ======= */
+.price-bg{background:var(--light);}
+.price-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2.5rem;}
+.price-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:2.2rem;box-shadow:0 12px 40px rgba(0,0,0,.05);}
+.price-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px dashed var(--border);}
+.price-row:last-child{border-bottom:none;}
+.price-row-l{display:flex;align-items:center;gap:12px;}
+.price-row-ic{width:38px;height:38px;border-radius:10px;background:var(--green3);display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
+.price-row-name{font-size:.9rem;font-weight:700;color:var(--dark);}
+.price-row-desc{font-size:.74rem;color:var(--muted);}
+.price-row-val{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--green);letter-spacing:.5px;}
+.price-row-val small{font-size:.7rem;font-family:'Inter';color:var(--muted);font-weight:600;}
+.price-note{font-size:.78rem;color:var(--muted);line-height:1.6;margin-top:1.2rem;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;}
+.price-info h3{font-size:1.4rem;font-weight:800;color:var(--dark);margin-bottom:.6rem;}
+.price-info p{font-size:.92rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;}
+.pay-methods{display:flex;flex-wrap:wrap;gap:10px;margin-top:1.4rem;}
+.pay-chip{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--border);border-radius:10px;padding:9px 14px;font-size:.8rem;font-weight:700;color:var(--dark);}
+.pay-chip span{font-size:1rem;}
 
 /* ======= ZONES ======= */
-.zones-bg{background:var(--light);}
+.zones-bg{background:#fff;}
 .zones-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:2.5rem;}
 .zone-list{display:flex;flex-direction:column;gap:10px;}
-.zone-item{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 16px;transition:all .2s;}
+.zone-item{display:flex;align-items:center;justify-content:space-between;background:var(--light);border:1px solid var(--border);border-radius:10px;padding:12px 16px;transition:all .2s;}
 .zone-item:hover{border-color:var(--green);box-shadow:0 4px 12px rgba(16,185,129,.1);}
 .zone-name{font-weight:700;font-size:.88rem;color:var(--dark);}
 .zone-delai{font-size:.75rem;color:var(--muted);}
-.zone-dispo{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:100px;}
+.zone-dispo{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:100px;display:inline-block;}
 .zone-dispo.ok{background:var(--green3);color:var(--green2);}
 .zone-dispo.soon{background:#fef3c7;color:#92400e;}
 .zones-map-placeholder{background:var(--dark);border-radius:20px;padding:3rem;text-align:center;color:rgba(255,255,255,.5);}
 .zones-map-placeholder .map-icon{font-size:4rem;margin-bottom:1rem;}
 
 /* ======= TEMOIGNAGES ======= */
+.testi-bg{background:var(--light);}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
 .testi-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:1.8rem;transition:all .3s;}
 .testi-card:hover{border-color:var(--green);box-shadow:0 12px 30px rgba(0,0,0,.08);}
@@ -231,23 +305,34 @@ h2.section-title span{color:var(--green);}
 .testi-name{font-weight:700;font-size:.88rem;color:var(--dark);}
 .testi-role{font-size:.75rem;color:var(--muted);}
 
+/* ======= FAQ ======= */
+.faq-list{margin-top:3rem;max-width:820px;}
+.faq-item{border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden;background:#fff;transition:border .2s;}
+.faq-item.open{border-color:var(--green);}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:18px 22px;font-size:.95rem;font-weight:700;color:var(--dark);cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Inter',sans-serif;}
+.faq-q-ic{width:26px;height:26px;flex-shrink:0;border-radius:50%;background:var(--green3);color:var(--green2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;transition:transform .3s;}
+.faq-item.open .faq-q-ic{transform:rotate(45deg);background:var(--green);color:#fff;}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faq-a-inner{padding:0 22px 18px;font-size:.88rem;color:var(--muted);line-height:1.7;}
+
 /* ======= CTA FINAL ======= */
 .cta-bg{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);position:relative;overflow:hidden;}
 .cta-bg::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(16,185,129,.12),transparent 70%);}
 .cta-inner{position:relative;z-index:1;text-align:center;}
 .cta-inner h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);color:#fff;letter-spacing:2px;margin-bottom:1rem;}
 .cta-inner h2 span{color:var(--green);}
-.cta-inner p{color:rgba(255,255,255,.6);font-size:1rem;line-height:1.7;max-width:500px;margin:0 auto 2.5rem;}
-.cta-form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+.cta-inner p{color:rgba(255,255,255,.6);font-size:1rem;line-height:1.7;max-width:520px;margin:0 auto 2.5rem;}
+.cta-form{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:12px;text-align:left;}
+.cta-form label{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.06em;margin-bottom:-6px;margin-left:2px;}
 .cta-form input,.cta-form select{width:100%;padding:14px 18px;border:1.5px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:10px;color:#fff;font-size:.9rem;font-family:'Inter',sans-serif;outline:none;transition:border .2s;}
 .cta-form input::placeholder{color:rgba(255,255,255,.35);}
 .cta-form input:focus,.cta-form select:focus{border-color:var(--green);}
 .cta-form select{color:rgba(255,255,255,.6);}
 .cta-form select option{background:var(--dark);color:#fff;}
 .cta-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.cta-submit{background:var(--green);color:#fff;border:none;width:100%;padding:16px;border-radius:10px;font-weight:800;font-size:1rem;cursor:pointer;transition:all .2s;box-shadow:0 8px 24px rgba(16,185,129,.35);font-family:'Inter',sans-serif;}
+.cta-submit{background:var(--green);color:#fff;border:none;width:100%;padding:16px;border-radius:10px;font-weight:800;font-size:1rem;cursor:pointer;transition:all .2s;box-shadow:0 8px 24px rgba(16,185,129,.35);font-family:'Inter',sans-serif;margin-top:6px;}
 .cta-submit:hover{background:var(--green2);transform:translateY(-2px);}
-.cta-note{font-size:.72rem;color:rgba(255,255,255,.3);margin-top:.5rem;}
+.cta-note{font-size:.72rem;color:rgba(255,255,255,.3);margin-top:.2rem;text-align:center;}
 .cta-wa{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#fff;padding:14px 28px;border-radius:10px;font-weight:700;font-size:.95rem;margin-top:1rem;transition:all .2s;}
 .cta-wa:hover{background:#1ebe5d;transform:translateY(-2px);}
 
@@ -255,11 +340,11 @@ h2.section-title span{color:var(--green);}
 footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,255,.06);}
 .footer-inner{max-width:1200px;margin:0 auto;}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem;}
-.footer-brand p{font-size:.83rem;color:rgba(255,255,255,.4);line-height:1.7;margin-top:.8rem;max-width:240px;}
+.footer-brand p{font-size:.83rem;color:rgba(255,255,255,.4);line-height:1.7;margin-top:.8rem;max-width:260px;}
 .footer-col h5{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.3);margin-bottom:.8rem;}
 .footer-col a{display:block;font-size:.83rem;color:rgba(255,255,255,.5);margin-bottom:6px;transition:color .2s;}
 .footer-col a:hover{color:var(--green);}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
 .footer-bottom p{font-size:.78rem;color:rgba(255,255,255,.25);}
 .footer-trio{display:flex;align-items:center;gap:16px;font-size:.72rem;color:rgba(255,255,255,.25);}
 .footer-trio span{color:rgba(255,255,255,.45);font-weight:600;}
@@ -273,200 +358,249 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
 @media(max-width:900px){
   .nav-links{display:none;}
   .hamburger{display:flex;}
-  .hero-content{grid-template-columns:1fr;gap:2rem;padding-top:4rem;}
-  .hero-right{display:none;}
+  .hero-content{grid-template-columns:1fr;gap:3rem;padding-top:4rem;text-align:center;}
+  .hero-badge,.hero h1,.hero-sub,.hero-btns,.hero-trust{justify-content:center;}
+  .hero-sub{margin-left:auto;margin-right:auto;}
+  .hero-right{margin-top:1rem;}
+  .hero-float-1{left:0;}
+  .hero-float-2{right:0;}
   .stats-grid{grid-template-columns:repeat(2,1fr);}
-  .services-grid,.steps-grid,.trio-grid,.tarifs-grid,.testi-grid{grid-template-columns:1fr;}
+  .cats-grid,.steps-grid,.aud-grid,.testi-grid{grid-template-columns:1fr;}
   .steps-grid::before{display:none;}
-  .confirm-grid,.zones-grid{grid-template-columns:1fr;}
+  .track-grid,.zones-grid,.price-wrap{grid-template-columns:1fr;}
   .footer-top{grid-template-columns:1fr 1fr;}
   .cta-form-row{grid-template-columns:1fr;}
-  .compare-table{font-size:.75rem;}
 }
 @media(max-width:540px){
   .stats-grid{grid-template-columns:repeat(2,1fr);}
   .footer-top{grid-template-columns:1fr;}
-  .footer-bottom{flex-direction:column;gap:1rem;text-align:center;}
+  .footer-bottom{flex-direction:column;text-align:center;}
   .hero h1{font-size:3rem;}
+  .phone{width:260px;height:520px;}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto!important;}
+  .reveal{opacity:1;transform:none;transition:none;}
 }
 </style>
 </head>
 <body>
+<a href="#categories" class="skip-link">Aller au contenu principal</a>
 
 <!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-inner" id="tickerInner">
-    <span>✅ Confirmation professionnelle &nbsp;·&nbsp; <strong>+75% taux de livraison</strong></span>
-    <span>🚀 Livraison Express Conakry &nbsp;·&nbsp; <strong>24-48h</strong></span>
-    <span>📊 CRM intégré &nbsp;·&nbsp; <strong>Suivi temps réel</strong></span>
-    <span>💰 Collecte cash sécurisée &nbsp;·&nbsp; <strong>Virement J+2</strong></span>
-    <span>🇬🇳 Couverture nationale &nbsp;·&nbsp; <strong>Conakry + 8 villes</strong></span>
-    <span>🔗 Intégration site en &nbsp;·&nbsp; <strong>5 minutes</strong></span>
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>🍔 Restaurants livrés chez vous &nbsp;·&nbsp; <strong>en 30 min*</strong></span>
+    <span>🛒 Épicerie &amp; marché &nbsp;·&nbsp; <strong>livrés en express</strong></span>
+    <span>💊 Pharmacie de garde &nbsp;·&nbsp; <strong>24h/24</strong></span>
+    <span>📍 Suivi du livreur &nbsp;·&nbsp; <strong>en temps réel</strong></span>
+    <span>💳 Mobile Money ou Cash &nbsp;·&nbsp; <strong>à la livraison</strong></span>
+    <span>🇬🇳 Conakry &amp; intérieur &nbsp;·&nbsp; <strong>9 villes</strong></span>
     <!-- duplicate for loop -->
-    <span>✅ Confirmation professionnelle &nbsp;·&nbsp; <strong>+75% taux de livraison</strong></span>
-    <span>🚀 Livraison Express Conakry &nbsp;·&nbsp; <strong>24-48h</strong></span>
-    <span>📊 CRM intégré &nbsp;·&nbsp; <strong>Suivi temps réel</strong></span>
-    <span>💰 Collecte cash sécurisée &nbsp;·&nbsp; <strong>Virement J+2</strong></span>
-    <span>🇬🇳 Couverture nationale &nbsp;·&nbsp; <strong>Conakry + 8 villes</strong></span>
-    <span>🔗 Intégration site en &nbsp;·&nbsp; <strong>5 minutes</strong></span>
+    <span>🍔 Restaurants livrés chez vous &nbsp;·&nbsp; <strong>en 30 min*</strong></span>
+    <span>🛒 Épicerie &amp; marché &nbsp;·&nbsp; <strong>livrés en express</strong></span>
+    <span>💊 Pharmacie de garde &nbsp;·&nbsp; <strong>24h/24</strong></span>
+    <span>📍 Suivi du livreur &nbsp;·&nbsp; <strong>en temps réel</strong></span>
+    <span>💳 Mobile Money ou Cash &nbsp;·&nbsp; <strong>à la livraison</strong></span>
+    <span>🇬🇳 Conakry &amp; intérieur &nbsp;·&nbsp; <strong>9 villes</strong></span>
   </div>
 </div>
 
 <!-- NAV -->
-<nav id="mainNav">
-  <div class="nav-brand">
-    <svg class="nav-logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<nav id="mainNav" aria-label="Navigation principale">
+  <a href="#accueil" class="nav-brand" aria-label="HP GO — accueil">
+    <svg class="nav-logo-svg" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo HP GO">
       <rect width="42" height="42" rx="10" fill="#0f172a"/>
-      <text x="5" y="28" font-family="Arial" font-weight="900" font-size="13" fill="#10b981">HP</text>
-      <text x="5" y="39" font-family="Arial" font-weight="900" font-size="11" fill="white">COD</text>
-      <path d="M33 18 L38 23 L33 28" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="6" y="20" font-family="Arial" font-weight="900" font-size="12" fill="#10b981">HP</text>
+      <text x="6" y="34" font-family="Arial" font-weight="900" font-size="12" fill="white">GO</text>
+      <path d="M30 14 L37 21 L30 28" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    <div class="nav-brand-text">
-      <strong>HPCOD</strong>
-      <span>Cash on Delivery · Guinée 🇬🇳</span>
-    </div>
-  </div>
+    <span class="nav-brand-text">
+      <strong>HP GO</strong>
+      <span>Livraison à la demande · Guinée 🇬🇳</span>
+    </span>
+  </a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#categories">Catégories</a></li>
     <li><a href="#comment">Comment ça marche</a></li>
-    <li><a href="#zones">Couverture</a></li>
-    <li><a href="#temoignages">Témoignages</a></li>
-    <li><a href="#contact" class="nav-cta">Démarrer →</a></li>
+    <li><a href="#partenaires">Livreur / Commerçant</a></li>
+    <li><a href="#zones">Villes</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#commander" class="nav-cta">Commander →</a></li>
   </ul>
   <div class="nav-right">
-    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobNav" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 <div class="mob-nav" id="mobNav">
-  <a href="#services" onclick="toggleMenu()">Services</a>
-  <a href="#tarifs" onclick="toggleMenu()">Tarifs</a>
+  <a href="#categories" onclick="toggleMenu()">Catégories</a>
   <a href="#comment" onclick="toggleMenu()">Comment ça marche</a>
-  <a href="#zones" onclick="toggleMenu()">Couverture</a>
-  <a href="#temoignages" onclick="toggleMenu()">Témoignages</a>
-  <a href="#contact" class="mob-cta" onclick="toggleMenu()">✅ Démarrer maintenant</a>
+  <a href="#partenaires" onclick="toggleMenu()">Devenir livreur / commerçant</a>
+  <a href="#zones" onclick="toggleMenu()">Villes couvertes</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#commander" class="mob-cta" onclick="toggleMenu()">🛵 Commander maintenant</a>
 </div>
 
 <!-- HERO -->
-<section class="hero" id="accueil">
+<header class="hero" id="accueil">
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-left">
       <div class="hero-badge">
         <div class="hero-badge-dot"></div>
-        <span>N°1 COD Guinée · Confirmé · Livré · Encaissé</span>
+        <span>La super-app de livraison en Guinée</span>
       </div>
       <h1>
-        <span class="t1">CONFIRMÉ.</span>
-        <span class="t2">LIVRÉ.</span>
-        <span class="t3">ENCAISSÉ.</span>
+        <span class="t1">COMMANDEZ.</span>
+        <span class="t2">SUIVEZ.</span>
+        <span class="t3">RECEVEZ.</span>
       </h1>
       <p class="hero-sub">
-        Le partenaire COD complet des e-commerçants guinéens.<br>
-        <strong>Confirmation d'appel professionnelle</strong>, livraison express,
-        collecte cash et <strong>CRM intégré</strong> — tout en un.
+        Tout ce dont vous avez besoin, livré chez vous.<br>
+        <strong>Repas, courses, médicaments, colis</strong> — commandez en quelques clics,
+        suivez votre livreur <strong>en temps réel</strong> et payez en Mobile Money ou en cash.
       </p>
       <div class="hero-btns">
-        <a href="#contact" class="btn-green">🚀 Devenir partenaire</a>
-        <a href="#tarifs" class="btn-outline">Voir les tarifs →</a>
+        <a href="#commander" class="btn-green">🛵 Commander maintenant</a>
+        <a href="#partenaires" class="btn-outline">Devenir partenaire →</a>
       </div>
       <div class="hero-trust">
         <div class="hero-trust-badge">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-          Sans engagement
+          Suivi en temps réel
         </div>
         <div class="hero-trust-badge">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-          Intégration en 5 min
+          Paiement cash ou Mobile Money
         </div>
         <div class="hero-trust-badge">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-          Virement J+2
+          Frais affichés avant de valider
         </div>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="hero-img-card">
-        <img src="assets/team-headsets.jpeg" alt="Équipe confirmation HPCOD">
-        <div class="hero-img-badge">
-          <div class="hero-img-badge-icon">📞</div>
-          <div class="hero-img-badge-text">
-            Équipe de confirmation dédiée<br>
-            <span>Taux de confirmation moyen : +75%</span>
+    <div class="hero-right" aria-hidden="true">
+      <!-- Maquette d'app 100% CSS (illustration originale) -->
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="ph-top">
+            <div class="ph-top-row">
+              <div>
+                <div class="ph-greet">Livrer à</div>
+                <div class="ph-addr">📍 Ratoma, Conakry ▾</div>
+              </div>
+              <div class="ph-bell">🔔</div>
+            </div>
+            <div class="ph-search">🔍 Rechercher un resto, un produit…</div>
+          </div>
+          <div class="ph-body">
+            <div class="ph-cats">
+              <div class="ph-cat"><span>🍔</span>Resto</div>
+              <div class="ph-cat"><span>🛒</span>Épicerie</div>
+              <div class="ph-cat"><span>💊</span>Pharma</div>
+              <div class="ph-cat"><span>📦</span>Colis</div>
+            </div>
+            <div class="ph-track">
+              <div class="ph-track-head">
+                <div class="ph-track-title">Commande en cours</div>
+                <div class="ph-track-eta">≈ 12 min</div>
+              </div>
+              <div class="ph-map">
+                <div class="ph-route"></div>
+                <div class="ph-pin a">🏪</div>
+                <div class="ph-rider">🛵</div>
+                <div class="ph-pin b">🏠</div>
+              </div>
+              <div class="ph-steps">
+                <div class="ph-step done"><div class="dot"></div>Confirmée</div>
+                <div class="ph-step done"><div class="dot"></div>Préparée</div>
+                <div class="ph-step done"><div class="dot"></div>En route</div>
+                <div class="ph-step"><div class="dot"></div>Livrée</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="hero-float hero-float-1">
+        <div class="hero-float-ic">🛵</div>
+        <div class="hero-float-t"><b>Livreur en route</b><small>Mamadou · à 1,2 km</small></div>
+      </div>
+      <div class="hero-float hero-float-2">
+        <div class="hero-float-ic">✅</div>
+        <div class="hero-float-t"><b>Payé en Mobile Money</b><small>ou cash à la porte</small></div>
+      </div>
     </div>
   </div>
-</section>
+</header>
 
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="stats-grid">
     <div class="stat-item reveal">
-      <div class="stat-num" data-target="75">0<span>%</span></div>
-      <div class="stat-lbl">Taux de confirmation moyen</div>
+      <div class="stat-num" data-target="6">0<span></span></div>
+      <div class="stat-lbl">Catégories de services</div>
     </div>
     <div class="stat-item reveal">
-      <div class="stat-num" data-target="48">0<span>h</span></div>
-      <div class="stat-lbl">Délai livraison Conakry</div>
+      <div class="stat-num" data-target="30">0<span>min</span></div>
+      <div class="stat-lbl">Livraison express Conakry*</div>
     </div>
     <div class="stat-item reveal">
       <div class="stat-num" data-target="9">0<span>+</span></div>
       <div class="stat-lbl">Villes couvertes</div>
     </div>
     <div class="stat-item reveal">
-      <div class="stat-num" data-target="2">J+<span></span></div>
-      <div class="stat-lbl">Délai virement cash</div>
+      <div class="stat-num" data-target="24">0<span>/24</span></div>
+      <div class="stat-lbl">Service &amp; suivi</div>
     </div>
   </div>
 </div>
 
-<!-- SERVICES -->
-<section class="services-bg" id="services">
+<!-- CATEGORIES -->
+<section class="cats-bg" id="categories">
   <div class="section-inner">
-    <div class="section-tag">Nos services</div>
-    <h2 class="section-title reveal">Tout ce qu'il vous faut<br><span>pour vendre en COD</span></h2>
-    <p class="section-sub reveal">De la confirmation d'appel à la collecte du cash — HPCOD gère toute la chaîne logistique e-commerce à votre place.</p>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">📞</div>
-        <h3>Confirmation d'appel</h3>
-        <p>Nos agents appellent vos clients pour confirmer chaque commande avant expédition. Moins d'échecs, plus de cash collecté.</p>
-        <span class="service-price">Taux réussite +75%</span>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">🏍️</div>
-        <h3>Livraison Express</h3>
-        <p>Réseau de livreurs à Conakry et dans les grandes villes. Délai garanti 24-72h selon la zone, avec preuve de livraison.</p>
-        <span class="service-price">Conakry 24-48h</span>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">💵</div>
-        <h3>Collecte & Virement Cash</h3>
-        <p>Le livreur collecte le montant exact à la livraison. Virement sécurisé sur votre compte en J+2 ouvré.</p>
-        <span class="service-price">Virement J+2</span>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">📦</div>
-        <h3>Stockage & Préparation</h3>
-        <p>Entreposez votre stock chez nous. Nos équipes préparent et emballent chaque commande avant expédition.</p>
-        <span class="service-price">Sur devis</span>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">📊</div>
-        <h3>CRM & Suivi en temps réel</h3>
-        <p>Accédez à votre tableau de bord : commandes, livraisons, relances, statistiques. Tout en un seul endroit.</p>
-        <span class="service-price">Inclus</span>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">🔗</div>
-        <h3>Intégration Webhook</h3>
-        <p>Connectez votre boutique en 5 minutes via notre API webhook. Compatible avec tous les sites e-commerce.</p>
-        <span class="service-price">5 min setup</span>
-      </div>
+    <div class="section-tag">Tout en une seule app</div>
+    <h2 class="section-title reveal">Commandez ce que<br><span>vous voulez</span></h2>
+    <p class="section-sub reveal">Des restaurants à la pharmacie, de vos courses à vos colis — HP GO réunit tous vos besoins du quotidien dans une seule application.</p>
+    <div class="cats-grid">
+      <article class="cat-card reveal">
+        <div class="cat-icon">🍔</div>
+        <h3>Restaurants</h3>
+        <p>Vos plats préférés livrés chauds. Fast-food, cuisine guinéenne, grillades, pâtisseries — commandez et suivez en direct.</p>
+        <div class="cat-tags"><span class="cat-tag">Repas</span><span class="cat-tag">Boissons</span><span class="cat-tag">Pâtisserie</span></div>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-icon">🛒</div>
+        <h3>Épicerie &amp; Marché</h3>
+        <p>Fruits, légumes, produits frais et de première nécessité. On fait vos courses au marché et on vous livre à domicile.</p>
+        <div class="cat-tags"><span class="cat-tag">Frais</span><span class="cat-tag">Marché</span><span class="cat-tag">Maison</span></div>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-icon">💊</div>
+        <h3>Pharmacie</h3>
+        <p>Médicaments et produits de santé livrés discrètement. Pharmacie de garde disponible pour les urgences.</p>
+        <div class="cat-tags"><span class="cat-tag">Santé</span><span class="cat-tag">Garde 24h</span><span class="cat-tag">Discret</span></div>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-icon">🛍️</div>
+        <h3>Boutiques</h3>
+        <p>Mode, électronique, beauté, accessoires… Les boutiques de la ville à portée de clic, livrées chez vous.</p>
+        <div class="cat-tags"><span class="cat-tag">Mode</span><span class="cat-tag">Tech</span><span class="cat-tag">Beauté</span></div>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-icon">📦</div>
+        <h3>Colis &amp; Express</h3>
+        <p>Envoyez et recevez vos colis dans la ville. Un coursier récupère et livre votre paquet en toute sécurité.</p>
+        <div class="cat-tags"><span class="cat-tag">Envoi</span><span class="cat-tag">Réception</span><span class="cat-tag">Sécurisé</span></div>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-icon">🏃</div>
+        <h3>Courses &amp; Services</h3>
+        <p>Besoin d'un coup de main ? Un coursier s'occupe de vos courses, démarches et achats pendant que vous vaquez.</p>
+        <div class="cat-tags"><span class="cat-tag">Coursier</span><span class="cat-tag">Achats</span><span class="cat-tag">Démarches</span></div>
+      </article>
     </div>
   </div>
 </section>
@@ -475,79 +609,84 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
 <section id="comment">
   <div class="section-inner">
     <div class="section-tag">Comment ça marche</div>
-    <h2 class="section-title reveal">4 étapes,<br><span>0 stress</span></h2>
-    <p class="section-sub reveal">Votre client passe commande → HPCOD prend le relais jusqu'à l'encaissement.</p>
+    <h2 class="section-title reveal">4 étapes,<br><span>et c'est livré</span></h2>
+    <p class="section-sub reveal">Commander avec HP GO est simple, rapide et transparent — du choix du produit à la réception chez vous.</p>
     <div class="steps-grid">
       <div class="step-card reveal">
         <div class="step-num">1</div>
-        <h3>Commande reçue</h3>
-        <p>Votre boutique envoie automatiquement la commande à notre CRM via webhook en temps réel.</p>
+        <h3>Choisissez</h3>
+        <p>Parcourez les restaurants, boutiques et commerces près de chez vous. Ajoutez au panier en quelques clics.</p>
       </div>
       <div class="step-card reveal">
         <div class="step-num">2</div>
-        <h3>Confirmation d'appel</h3>
-        <p>Notre équipe appelle le client dans l'heure pour confirmer adresse, produit et disponibilité.</p>
+        <h3>Validez</h3>
+        <p>Les frais de livraison s'affichent clairement avant de payer. Choisissez Mobile Money, cash ou portefeuille HP GO.</p>
       </div>
       <div class="step-card reveal">
         <div class="step-num">3</div>
-        <h3>Livraison express</h3>
-        <p>Le livreur part avec le colis et collecte le cash à la porte du client. Preuve photo à l'appui.</p>
+        <h3>Suivez en direct</h3>
+        <p>Suivez votre livreur sur la carte en temps réel et recevez des notifications à chaque étape.</p>
       </div>
       <div class="step-card reveal">
         <div class="step-num">4</div>
-        <h3>Virement J+2</h3>
-        <p>Le montant collecté est viré sur votre compte dans les 48h. Récap détaillé dans le CRM.</p>
+        <h3>Recevez</h3>
+        <p>Votre commande arrive à votre porte. Payez à la livraison si vous avez choisi le cash, puis notez votre livreur.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONFIRMATION SECTION (avec image réelle) -->
-<section style="background:var(--light);padding:6rem 5%;">
+<!-- TRACKING SHOWCASE -->
+<section class="track-bg" id="suivi">
   <div class="section-inner">
-    <div class="confirm-grid">
-      <div class="confirm-img reveal">
-        <img src="assets/agents-travail.jpeg" alt="Agents confirmation HPCOD">
-        <div class="confirm-img-overlay">
-          <div class="confirm-stat">
-            <div class="confirm-stat-num">+75%</div>
-            <div class="confirm-stat-lbl">Taux de confirmation moyen</div>
-          </div>
-        </div>
-      </div>
+    <div class="track-grid">
       <div>
-        <div class="section-tag">Confirmation professionnelle</div>
-        <h2 class="section-title reveal">Une équipe dédiée<br><span>à vos confirmations</span></h2>
-        <p style="color:var(--muted);font-size:.95rem;line-height:1.7;margin-bottom:2rem;" class="reveal">
-          Chaque commande est prise en charge par nos agents qualifiés. Ils appellent, confirment, relancent si besoin — pour maximiser votre taux de livraison effective.
-        </p>
-        <div class="confirm-points">
-          <div class="confirm-point reveal">
-            <div class="confirm-point-icon">⚡</div>
-            <div class="confirm-point-text">
-              <h4>Appel dans l'heure</h4>
-              <p>Chaque nouvelle commande est traitée dans l'heure qui suit la réception dans le CRM.</p>
+        <div class="section-tag" style="color:var(--green);">Suivi en temps réel</div>
+        <h2 class="section-title reveal" style="color:#fff;">Voyez votre livreur<br><span>arriver</span></h2>
+        <p class="section-sub reveal" style="color:rgba(255,255,255,.55);">Plus d'attente dans le flou. Avec HP GO, vous savez exactement où en est votre commande, du commerçant jusqu'à votre porte.</p>
+        <div class="track-points">
+          <div class="track-point reveal">
+            <div class="track-point-icon">📍</div>
+            <div class="track-point-text">
+              <h4>Position GPS en direct</h4>
+              <p>Suivez le déplacement de votre livreur sur la carte, minute par minute.</p>
             </div>
           </div>
-          <div class="confirm-point reveal">
-            <div class="confirm-point-icon">🔄</div>
-            <div class="confirm-point-text">
-              <h4>3 tentatives de rappel</h4>
-              <p>Si le client est injoignable, nos agents rappellent jusqu'à 3 fois sur 24h avant classement.</p>
+          <div class="track-point reveal">
+            <div class="track-point-icon">🔔</div>
+            <div class="track-point-text">
+              <h4>Notifications à chaque étape</h4>
+              <p>Commande confirmée, en préparation, en route, livrée — vous êtes prévenu par notification, SMS ou WhatsApp.</p>
             </div>
           </div>
-          <div class="confirm-point reveal">
-            <div class="confirm-point-icon">📋</div>
-            <div class="confirm-point-text">
-              <h4>Script personnalisé</h4>
-              <p>Script d'appel adapté à votre boutique et vos produits. Argumentaire COD optimisé.</p>
+          <div class="track-point reveal">
+            <div class="track-point-icon">💬</div>
+            <div class="track-point-text">
+              <h4>Contact direct avec le livreur</h4>
+              <p>Appelez ou écrivez à votre livreur pour préciser l'adresse ou un détail, en un clic.</p>
             </div>
           </div>
-          <div class="confirm-point reveal">
-            <div class="confirm-point-icon">📊</div>
-            <div class="confirm-point-text">
-              <h4>Rapport quotidien</h4>
-              <p>Récap de toutes les confirmations, refus, et injoignables chaque soir dans votre CRM.</p>
+        </div>
+      </div>
+      <div class="track-visual reveal">
+        <div class="track-map">
+          <div class="track-map-canvas">
+            <div class="tm-route"></div>
+            <div class="tm-pin start"><span>🏪</span></div>
+            <div class="tm-rider">🛵</div>
+            <div class="tm-pin end"><span>🏠</span></div>
+          </div>
+          <div class="track-map-info">
+            <div class="tmi-rider">
+              <div class="tmi-av">M</div>
+              <div>
+                <div class="tmi-name">Mamadou D.</div>
+                <div class="tmi-role">Votre livreur · ⭐ 4,9</div>
+              </div>
+            </div>
+            <div class="tmi-eta">
+              <div class="tmi-eta-num">12 min</div>
+              <div class="tmi-eta-lbl">Temps estimé*</div>
             </div>
           </div>
         </div>
@@ -556,172 +695,119 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
   </div>
 </section>
 
-<!-- TRIO ECOSYSTEM -->
-<section class="trio-bg" style="padding:6rem 5%;">
+<!-- AUDIENCES : Client / Livreur / Commerçant -->
+<section id="partenaires">
   <div class="section-inner">
-    <div class="section-tag" style="color:var(--green);">L'écosystème complet</div>
-    <h2 class="section-title reveal" style="color:#fff;">Le trio qui fait<br><span>vendre plus</span></h2>
-    <p class="section-sub reveal" style="color:rgba(255,255,255,.5);">HPCOD, HPSHOP et le CRM travaillent ensemble en temps réel. Chaque pièce renforce les deux autres.</p>
-    <div class="trio-grid">
-      <div class="trio-card active reveal">
-        <div class="trio-tag">Votre partenaire logistique</div>
-        <div class="trio-logo">HPCOD</div>
-        <p class="trio-desc">Confirmation d'appel + livraison + collecte cash + retour marchandise. Le moteur du trio.</p>
-        <div class="trio-features">
-          <div class="trio-feature">Confirmation professionnelle</div>
-          <div class="trio-feature">Livraison express Guinée</div>
-          <div class="trio-feature">Collecte & virement J+2</div>
-          <div class="trio-feature">Intégration CRM automatique</div>
+    <div class="section-tag">Rejoignez HP GO</div>
+    <h2 class="section-title reveal">Une plateforme,<br><span>trois façons d'en profiter</span></h2>
+    <p class="section-sub reveal">Que vous vouliez vous faire livrer, gagner de l'argent en livrant, ou vendre plus avec votre commerce — HP GO est fait pour vous.</p>
+    <div class="aud-grid">
+      <article class="aud-card feat reveal">
+        <div class="aud-ic">📱</div>
+        <h3>Je commande</h3>
+        <p class="aud-lead">Faites-vous livrer tout ce dont vous avez besoin, où que vous soyez en ville.</p>
+        <div class="aud-feats">
+          <div class="aud-feat">Restaurants, épicerie, pharmacie, boutiques</div>
+          <div class="aud-feat">Frais de livraison clairs avant de payer</div>
+          <div class="aud-feat">Mobile Money, cash ou portefeuille HP GO</div>
+          <div class="aud-feat">Suivi en temps réel &amp; notifications</div>
+          <div class="aud-feat">Notes &amp; avis pour commander en confiance</div>
         </div>
-      </div>
-      <div class="trio-card reveal">
-        <div class="trio-tag trio-tag-other">Boutique en ligne clé en main</div>
-        <div class="trio-logo trio-logo-other">HPSHOP</div>
-        <p class="trio-desc" style="color:rgba(255,255,255,.35);">Votre vitrine e-commerce COD prête à vendre. Connectée à HPCOD dès la création.</p>
-        <div class="trio-features">
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Boutique produits multi-catégories</div>
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Checkout COD intégré</div>
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Commandes → HPCOD auto</div>
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Paiement Cash ou Orange Money</div>
+        <a href="#commander" class="aud-btn aud-btn-green">Commander maintenant →</a>
+      </article>
+      <article class="aud-card reveal">
+        <div class="aud-ic">🛵</div>
+        <h3>Je livre</h3>
+        <p class="aud-lead">Devenez livreur partenaire et gagnez de l'argent à votre rythme, avec votre moto.</p>
+        <div class="aud-feats">
+          <div class="aud-feat">Inscription simple, en ligne</div>
+          <div class="aud-feat">Vous êtes en ligne quand vous voulez</div>
+          <div class="aud-feat">Courses proposées près de vous</div>
+          <div class="aud-feat">Suivi de vos gains en temps réel</div>
+          <div class="aud-feat">Paiements réguliers &amp; transparents</div>
         </div>
-      </div>
-      <div class="trio-card reveal">
-        <div class="trio-tag trio-tag-other">Pilotage & analytics</div>
-        <div class="trio-logo trio-logo-other">CRM</div>
-        <p class="trio-desc" style="color:rgba(255,255,255,.35);">Tableau de bord centralisé pour suivre chaque commande, chaque appel, chaque livraison.</p>
-        <div class="trio-features">
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Suivi temps réel</div>
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Stats confirmation & livraison</div>
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Gestion multi-boutiques</div>
-          <div class="trio-feature" style="color:rgba(255,255,255,.3);">Rapports & export Excel</div>
+        <a href="https://wa.me/224621881210?text=Bonjour%20HP%20GO%2C%20je%20veux%20devenir%20livreur%20partenaire." class="aud-btn aud-btn-outline" target="_blank" rel="noopener">Devenir livreur →</a>
+      </article>
+      <article class="aud-card reveal">
+        <div class="aud-ic">🏪</div>
+        <h3>Je vends</h3>
+        <p class="aud-lead">Restaurant, boutique, pharmacie ou épicerie ? Touchez plus de clients sans logistique.</p>
+        <div class="aud-feats">
+          <div class="aud-feat">Votre catalogue / menu en ligne</div>
+          <div class="aud-feat">Commandes reçues en temps réel</div>
+          <div class="aud-feat">Livraison assurée par nos livreurs</div>
+          <div class="aud-feat">Statistiques de ventes &amp; promotions</div>
+          <div class="aud-feat">Versements suivis dans votre espace</div>
         </div>
-      </div>
+        <a href="https://wa.me/224621881210?text=Bonjour%20HP%20GO%2C%20je%20veux%20inscrire%20mon%20commerce%20sur%20la%20plateforme." class="aud-btn aud-btn-outline" target="_blank" rel="noopener">Inscrire mon commerce →</a>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- COMPARATIF -->
-<section id="comparatif">
+<!-- PRICING : transparence des frais -->
+<section class="price-bg" id="tarifs">
   <div class="section-inner">
-    <div class="section-tag">Pourquoi HPCOD</div>
-    <h2 class="section-title reveal">Ce que les autres<br><span>ne font pas</span></h2>
-    <p class="section-sub reveal">HPCOD n'est pas qu'un livreur. C'est un partenaire complet qui maximise votre taux d'encaissement.</p>
-    <table class="compare-table reveal">
-      <thead>
-        <tr>
-          <th>Fonctionnalité</th>
-          <th class="hpcod-col">⚡ HPCOD</th>
-          <th>Rapido GN</th>
-          <th>Livreur classique</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Confirmation d'appel professionnelle</td>
-          <td class="hpcod-col"><span class="chk">✓</span> Équipe dédiée</td>
-          <td><span class="partial">⚠</span> Basique</td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-        <tr>
-          <td>CRM & suivi temps réel</td>
-          <td class="hpcod-col"><span class="chk">✓</span> CRM complet</td>
-          <td><span class="partial">⚠</span> Limité</td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-        <tr>
-          <td>Intégration webhook API</td>
-          <td class="hpcod-col"><span class="chk">✓</span> 5 min setup</td>
-          <td><span class="partial">⚠</span> Manuel</td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-        <tr>
-          <td>Boutique e-commerce intégrée</td>
-          <td class="hpcod-col"><span class="chk">✓</span> HPSHOP</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-        <tr>
-          <td>Script de vente personnalisé</td>
-          <td class="hpcod-col"><span class="chk">✓</span> Par boutique</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-        <tr>
-          <td>Virement cash garanti J+2</td>
-          <td class="hpcod-col"><span class="chk">✓</span> Garanti</td>
-          <td><span class="partial">⚠</span> Variable</td>
-          <td><span class="partial">⚠</span> Variable</td>
-        </tr>
-        <tr>
-          <td>Rapport quotidien détaillé</td>
-          <td class="hpcod-col"><span class="chk">✓</span> Automatique</td>
-          <td><span class="partial">⚠</span> Sur demande</td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- TARIFS -->
-<section class="tarifs-bg" id="tarifs">
-  <div class="section-inner">
-    <div class="section-tag" style="color:var(--green);">Tarifs transparents</div>
-    <h2 class="section-title reveal" style="color:#fff;">Simple, clair,<br><span>sans surprise</span></h2>
-    <p class="section-sub reveal" style="color:rgba(255,255,255,.5);">Pas de frais cachés. Vous ne payez que sur les livraisons réussies.</p>
-    <div class="tarifs-grid">
-      <div class="tarif-card reveal">
-        <div class="tarif-name">Confirmation seule</div>
-        <div class="tarif-price">15 000<span> GNF</span></div>
-        <div class="tarif-desc">Pour les e-commerçants qui ont déjà leurs livreurs mais veulent booster leur taux de confirmation.</div>
-        <div class="tarif-features">
-          <div class="tarif-feature ok">Appel de confirmation</div>
-          <div class="tarif-feature ok">3 tentatives de rappel</div>
-          <div class="tarif-feature ok">Rapport quotidien CRM</div>
-          <div class="tarif-feature ok">Script personnalisé</div>
-          <div class="tarif-feature no">Livraison incluse</div>
-          <div class="tarif-feature no">Collecte cash</div>
+    <div class="section-tag">Prix transparents</div>
+    <h2 class="section-title reveal">Pas de mauvaise<br><span>surprise</span></h2>
+    <p class="section-sub reveal">Les frais de livraison dépendent de la distance et sont toujours affichés avant que vous ne validiez votre commande.</p>
+    <div class="price-wrap">
+      <div class="price-card reveal">
+        <div class="price-row">
+          <div class="price-row-l">
+            <div class="price-row-ic">🛵</div>
+            <div>
+              <div class="price-row-name">Livraison de proximité</div>
+              <div class="price-row-desc">Jusqu'à ~3 km · même commune</div>
+            </div>
+          </div>
+          <div class="price-row-val">À partir de 10 000 <small>GNF</small></div>
         </div>
-        <a href="#contact" class="tarif-btn tarif-btn-outline">Commencer →</a>
+        <div class="price-row">
+          <div class="price-row-l">
+            <div class="price-row-ic">🏙️</div>
+            <div>
+              <div class="price-row-name">Livraison en ville</div>
+              <div class="price-row-desc">Conakry, entre communes</div>
+            </div>
+          </div>
+          <div class="price-row-val">À partir de 15 000 <small>GNF</small></div>
+        </div>
+        <div class="price-row">
+          <div class="price-row-l">
+            <div class="price-row-ic">📦</div>
+            <div>
+              <div class="price-row-name">Colis &amp; coursier</div>
+              <div class="price-row-desc">Selon distance &amp; taille</div>
+            </div>
+          </div>
+          <div class="price-row-val">Sur devis</div>
+        </div>
+        <div class="price-note">
+          ⓘ <strong>Tarifs d'exemple — à vérifier.</strong> Les prix réels sont calculés automatiquement selon la distance et gérés depuis notre back-office. Le montant exact s'affiche toujours avant la validation de la commande.
+        </div>
       </div>
-      <div class="tarif-card featured reveal">
-        <div class="tarif-name">Pack Complet</div>
-        <div class="tarif-price">65 000<span> GNF</span></div>
-        <div class="tarif-desc">Confirmation + livraison + collecte cash à Conakry. La solution tout-en-un la plus populaire.</div>
-        <div class="tarif-features">
-          <div class="tarif-feature ok">Confirmation professionnelle</div>
-          <div class="tarif-feature ok">Livraison Conakry 24-48h</div>
-          <div class="tarif-feature ok">Collecte cash à la livraison</div>
-          <div class="tarif-feature ok">Virement J+2</div>
-          <div class="tarif-feature ok">CRM & suivi temps réel</div>
-          <div class="tarif-feature ok">Rapport quotidien</div>
+      <div class="price-info">
+        <h3>Vous payez comme vous voulez</h3>
+        <p>HP GO s'adapte à vos habitudes. Réglez en argent mobile, en espèces à la réception, ou via votre portefeuille HP GO rechargeable.</p>
+        <div class="pay-methods">
+          <div class="pay-chip"><span>📱</span> Orange Money</div>
+          <div class="pay-chip"><span>📲</span> MTN / Mobile Money</div>
+          <div class="pay-chip"><span>💵</span> Cash à la livraison</div>
+          <div class="pay-chip"><span>👛</span> Portefeuille HP GO</div>
         </div>
-        <a href="#contact" class="tarif-btn tarif-btn-green">Démarrer maintenant →</a>
-      </div>
-      <div class="tarif-card reveal">
-        <div class="tarif-name">Intérieur Guinée</div>
-        <div class="tarif-price">Sur<span> devis</span></div>
-        <div class="tarif-desc">Kindia, Labé, Kankan, Mamou, Boké et autres villes. Tarif selon la zone et le volume.</div>
-        <div class="tarif-features">
-          <div class="tarif-feature ok">Confirmation incluse</div>
-          <div class="tarif-feature ok">Livraison toute la Guinée</div>
-          <div class="tarif-feature ok">Collecte cash</div>
-          <div class="tarif-feature ok">Virement J+3 à J+5</div>
-          <div class="tarif-feature ok">CRM & suivi</div>
-          <div class="tarif-feature ok">Tarif dégressif volume</div>
-        </div>
-        <a href="https://wa.me/224621881210?text=Bonjour%20HPCOD%2C%20je%20veux%20un%20devis%20pour%20la%20livraison%20int%C3%A9rieur" class="tarif-btn tarif-btn-outline" target="_blank">Demander un devis →</a>
+        <p style="margin-top:1.4rem;font-size:.8rem;color:var(--muted);">* Les moyens de paiement et tarifs affichés sont des exemples à confirmer et seront configurés via le back-office HP GO.</p>
       </div>
     </div>
-    <p style="text-align:center;color:rgba(255,255,255,.3);font-size:.78rem;margin-top:1.5rem;">* Tarifs HT par commande livrée. Retours gratuits si refus à la porte.</p>
   </div>
 </section>
 
 <!-- ZONES DE COUVERTURE -->
 <section class="zones-bg" id="zones">
   <div class="section-inner">
-    <div class="section-tag">Couverture</div>
-    <h2 class="section-title reveal">Nous livrons<br><span>partout en Guinée</span></h2>
+    <div class="section-tag">Villes couvertes</div>
+    <h2 class="section-title reveal">HP GO arrive<br><span>partout en Guinée</span></h2>
+    <p class="section-sub reveal">Nous démarrons à Conakry et nous étendons progressivement à tout le pays. Votre ville n'est pas encore là ? Dites-le nous.</p>
     <div class="zones-grid">
       <div class="zone-list reveal">
         <div class="zone-item">
@@ -729,19 +815,19 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
             <div class="zone-name">🏙️ Conakry — Toutes communes</div>
             <div class="zone-delai">Kaloum, Ratoma, Matam, Dixinn, Matoto</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo ok">Disponible</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">24-48h</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">30-60 min*</div>
           </div>
         </div>
         <div class="zone-item">
           <div>
-            <div class="zone-name">🌿 Coyah & Dubreka</div>
-            <div class="zone-delai">Périphérie Conakry</div>
+            <div class="zone-name">🌿 Coyah &amp; Dubréka</div>
+            <div class="zone-delai">Périphérie de Conakry</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo ok">Disponible</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">48-72h</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">Jour même*</div>
           </div>
         </div>
         <div class="zone-item">
@@ -749,39 +835,39 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
             <div class="zone-name">🏔️ Kindia</div>
             <div class="zone-delai">Région de Kindia</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo ok">Disponible</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">48-72h</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">Jour même*</div>
           </div>
         </div>
         <div class="zone-item">
           <div>
-            <div class="zone-name">🌄 Labé & Pita</div>
+            <div class="zone-name">🌄 Labé &amp; Pita</div>
             <div class="zone-delai">Fouta Djallon</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo ok">Disponible</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">3-5 jours</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">24-48h*</div>
           </div>
         </div>
         <div class="zone-item">
           <div>
-            <div class="zone-name">🌱 Kankan & Siguiri</div>
+            <div class="zone-name">🌱 Kankan &amp; Siguiri</div>
             <div class="zone-delai">Haute Guinée</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo ok">Disponible</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">3-5 jours</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">24-48h*</div>
           </div>
         </div>
         <div class="zone-item">
           <div>
             <div class="zone-name">🌲 Mamou · Boké · Faranah</div>
-            <div class="zone-delai">Guinée centrale et maritime</div>
+            <div class="zone-delai">Guinée centrale &amp; maritime</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo ok">Disponible</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">3-5 jours</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">24-48h*</div>
           </div>
         </div>
         <div class="zone-item">
@@ -789,99 +875,154 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
             <div class="zone-name">🌿 Nzérékoré · Guéckédou</div>
             <div class="zone-delai">Guinée forestière</div>
           </div>
-          <div>
+          <div style="text-align:right;">
             <span class="zone-dispo soon">Bientôt</span>
-            <div style="font-size:.72rem;color:var(--muted);text-align:right;margin-top:3px;">Q3 2026</div>
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px;">Q3 2026*</div>
           </div>
         </div>
       </div>
       <div>
         <div class="zones-map-placeholder reveal">
-          <div class="map-icon">🗺️</div>
+          <div class="map-icon" aria-hidden="true">🗺️</div>
           <div style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:#fff;letter-spacing:1px;margin-bottom:.5rem;">GUINÉE 🇬🇳</div>
           <div style="font-size:.85rem;line-height:1.6;">
             <div style="color:var(--green);font-weight:700;font-size:1rem;margin-bottom:.5rem;">9 zones actives</div>
-            Conakry · Kindia · Labé · Kankan<br>Mamou · Boké · Faranah · Coyah · Dubreka
+            Conakry · Kindia · Labé · Kankan<br>Mamou · Boké · Faranah · Coyah · Dubréka
           </div>
           <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);">
             <div style="font-size:.78rem;color:rgba(255,255,255,.35);">Vous êtes dans une autre ville ?</div>
-            <a href="https://wa.me/224621881210?text=Bonjour%20HPCOD%2C%20je%20suis%20%C3%A0..." style="display:inline-block;margin-top:.8rem;background:var(--green);color:#fff;padding:10px 20px;border-radius:8px;font-size:.82rem;font-weight:700;" target="_blank">Contactez-nous →</a>
+            <a href="https://wa.me/224621881210?text=Bonjour%20HP%20GO%2C%20je%20suis%20%C3%A0..." style="display:inline-block;margin-top:.8rem;background:var(--green);color:#fff;padding:10px 20px;border-radius:8px;font-size:.82rem;font-weight:700;" target="_blank" rel="noopener">Dites-nous où →</a>
           </div>
         </div>
       </div>
     </div>
+    <p style="font-size:.74rem;color:var(--muted);margin-top:1.5rem;">* Délais d'exemple, à vérifier — variables selon la zone, le commerçant et la disponibilité des livreurs.</p>
   </div>
 </section>
 
 <!-- TEMOIGNAGES -->
-<section id="temoignages">
+<section class="testi-bg" id="temoignages">
   <div class="section-inner">
-    <div class="section-tag">Témoignages</div>
-    <h2 class="section-title reveal">Ils nous font<br><span>confiance</span></h2>
+    <div class="section-tag">Ils utilisent HP GO</div>
+    <h2 class="section-title reveal">Ce qu'ils<br><span>en disent</span></h2>
     <div class="testi-grid">
-      <div class="testi-card reveal">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Avant HPCOD, mon taux de livraison était à 45%. Maintenant je dépasse 80%. L'équipe de confirmation fait vraiment la différence."</p>
-        <div class="testi-author">
-          <div class="testi-av">AD</div>
+      <figure class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote class="testi-text">"Je commande mon déjeuner depuis le bureau et je suis le livreur en direct. Ça arrive chaud et je paie en Orange Money. Pratique !"</blockquote>
+        <figcaption class="testi-author">
+          <div class="testi-av" aria-hidden="true">AD</div>
           <div>
-            <div class="testi-name">Amadou D.</div>
-            <div class="testi-role">HPSHOP Afrique · Conakry</div>
+            <div class="testi-name">Aïssata D.</div>
+            <div class="testi-role">Cliente · Kaloum, Conakry</div>
           </div>
-        </div>
+        </figcaption>
+      </figure>
+      <figure class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote class="testi-text">"Avec ma moto, je fais des livraisons quand je veux après les cours. Les courses sont proches et je vois mes gains chaque soir."</blockquote>
+        <figcaption class="testi-author">
+          <div class="testi-av" aria-hidden="true">MB</div>
+          <div>
+            <div class="testi-name">Mohamed B.</div>
+            <div class="testi-role">Livreur partenaire · Ratoma</div>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="testi-card reveal">
+        <div class="testi-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote class="testi-text">"Mon restaurant reçoit plus de commandes sans que je gère la livraison. Les clients suivent leur commande et reviennent."</blockquote>
+        <figcaption class="testi-author">
+          <div class="testi-av" aria-hidden="true">FC</div>
+          <div>
+            <div class="testi-name">Fatoumata C.</div>
+            <div class="testi-role">Restauratrice · Matam</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+    <p style="font-size:.74rem;color:var(--muted);margin-top:1.5rem;">Témoignages illustratifs — à remplacer par de vrais avis clients.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-tag">Questions fréquentes</div>
+    <h2 class="section-title reveal">On répond à<br><span>vos questions</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          Comment passer une commande sur HP GO ?
+          <span class="faq-q-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Choisissez votre catégorie (restaurant, épicerie, pharmacie…), ajoutez vos articles au panier, indiquez votre adresse, vérifiez les frais affichés, puis validez. Vous pouvez ensuite suivre votre livreur en temps réel jusqu'à la réception.</div></div>
       </div>
-      <div class="testi-card reveal">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Le CRM m'a changé la vie. Je vois tout en temps réel depuis mon téléphone. Plus besoin d'appeler le livreur pour savoir où est ma commande."</p>
-        <div class="testi-author">
-          <div class="testi-av">FB</div>
-          <div>
-            <div class="testi-name">Fatoumata B.</div>
-            <div class="testi-role">Boutique mode · Ratoma</div>
-          </div>
-        </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          Comment sont calculés les frais de livraison ?
+          <span class="faq-q-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Les frais dépendent principalement de la distance entre le commerçant et votre adresse. Le montant exact est toujours affiché <strong>avant</strong> que vous ne validiez votre commande — aucune surprise à la livraison. (Tarifs d'exemple à vérifier, configurés via le back-office.)</div></div>
       </div>
-      <div class="testi-card reveal">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Le virement J+2 c'est ce qui m'a convaincu. Je peux réinvestir rapidement en stock. Le service est professionnel et réactif."</p>
-        <div class="testi-author">
-          <div class="testi-av">MK</div>
-          <div>
-            <div class="testi-name">Mamadou K.</div>
-            <div class="testi-role">Tech & accessoires · Matam</div>
-          </div>
-        </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          Quels moyens de paiement sont acceptés ?
+          <span class="faq-q-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Vous pouvez payer par argent mobile (Orange Money, MTN / Mobile Money), en espèces à la livraison, ou via votre portefeuille HP GO. Les options exactes seront confirmées selon votre ville.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          Puis-je suivre ma commande en temps réel ?
+          <span class="faq-q-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Oui. Dès que votre commande est confirmée, vous voyez sa progression (confirmée, en préparation, en route, livrée) et la position de votre livreur sur la carte. Vous recevez aussi des notifications par appli, SMS ou WhatsApp.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          Comment devenir livreur partenaire ?
+          <span class="faq-q-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Inscrivez-vous en ligne, fournissez vos informations, et une fois validé vous pouvez vous mettre « en ligne » quand vous voulez pour recevoir des courses près de vous. Vos gains sont suivis en temps réel. Contactez-nous sur WhatsApp pour démarrer.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          Je tiens un commerce : comment rejoindre HP GO ?
+          <span class="faq-q-ic" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Restaurant, boutique, pharmacie ou épicerie : inscrivez votre commerce, mettez votre menu ou catalogue en ligne, et recevez des commandes que nos livreurs assurent. Vous suivez vos ventes et vos versements depuis votre espace commerçant.</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA FINAL -->
-<section class="cta-bg" id="contact">
+<section class="cta-bg" id="commander">
   <div class="section-inner cta-inner">
-    <div class="section-tag" style="color:var(--green);justify-content:center;">Rejoignez HPCOD</div>
-    <h2>Prêt à <span>vendre plus</span><br>et stresser moins ?</h2>
-    <p>Remplissez le formulaire — notre équipe vous contacte dans les 24h pour configurer votre compte.</p>
-    <div class="cta-form">
+    <div class="section-tag" style="color:var(--green);justify-content:center;">Commandez avec HP GO</div>
+    <h2>Faim, courses ou colis ?<br><span>On s'en occupe.</span></h2>
+    <p>Laissez vos coordonnées : notre équipe vous recontacte pour prendre votre commande ou vous guider sur l'application. Vous pouvez aussi commander directement sur WhatsApp.</p>
+    <form class="cta-form" onsubmit="event.preventDefault();submitContact();">
       <div class="cta-form-row">
-        <input type="text" placeholder="Votre nom *" id="ctaNom">
-        <input type="tel" placeholder="Téléphone * (6XX XX XX)" id="ctaTel">
+        <input type="text" placeholder="Votre nom *" id="ctaNom" aria-label="Votre nom" required>
+        <input type="tel" placeholder="Téléphone * (6XX XX XX XX)" id="ctaTel" aria-label="Votre téléphone" required>
       </div>
-      <input type="text" placeholder="Nom de votre boutique *" id="ctaBoutique">
-      <input type="url" placeholder="URL de votre site (si vous en avez un)" id="ctaSite">
-      <select id="ctaVolume">
-        <option value="">Volume mensuel de commandes estimé</option>
-        <option>Moins de 50 commandes/mois</option>
-        <option>50 à 200 commandes/mois</option>
-        <option>200 à 500 commandes/mois</option>
-        <option>Plus de 500 commandes/mois</option>
+      <input type="text" placeholder="Votre quartier / commune *" id="ctaZone" aria-label="Votre quartier ou commune" required>
+      <select id="ctaBesoin" aria-label="Votre besoin">
+        <option value="">Que voulez-vous commander ?</option>
+        <option>🍔 Un repas / restaurant</option>
+        <option>🛒 Épicerie / courses</option>
+        <option>💊 Pharmacie</option>
+        <option>🛍️ Une boutique</option>
+        <option>📦 Envoyer / recevoir un colis</option>
+        <option>🏃 Une course / un service</option>
       </select>
-      <button class="cta-submit" onclick="submitContact()">🚀 Démarrer avec HPCOD — Gratuit</button>
-      <p class="cta-note">🔒 Vos informations sont confidentielles. Sans engagement. Réponse sous 24h.</p>
-    </div>
-    <div style="margin-top:2rem;color:rgba(255,255,255,.35);font-size:.85rem;">— ou démarrez directement sur —</div>
-    <a href="https://wa.me/224621881210?text=Bonjour%20HPCOD%2C%20je%20veux%20devenir%20partenaire%20!" class="cta-wa" target="_blank">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <button type="submit" class="cta-submit">🛵 Envoyer ma demande</button>
+      <p class="cta-note">🔒 Vos informations restent confidentielles. Réponse rapide.</p>
+    </form>
+    <div style="margin-top:2rem;color:rgba(255,255,255,.35);font-size:.85rem;">— ou commandez directement sur —</div>
+    <a href="https://wa.me/224621881210?text=Bonjour%20HP%20GO%2C%20je%20veux%20passer%20une%20commande%20!" class="cta-wa" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       WhatsApp — +224 621 88 12 10
     </a>
   </div>
@@ -892,65 +1033,76 @@ footer{background:var(--dark);padding:3rem 5%;border-top:1px solid rgba(255,255,
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#fff;letter-spacing:2px;">HPCOD</div>
-        <p>Le partenaire COD complet des e-commerçants guinéens. Confirmation · Livraison · Collecte · CRM.</p>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <svg width="38" height="38" viewBox="0 0 42 42" fill="none" role="img" aria-label="Logo HP GO">
+            <rect width="42" height="42" rx="10" fill="#1e293b"/>
+            <text x="6" y="20" font-family="Arial" font-weight="900" font-size="12" fill="#10b981">HP</text>
+            <text x="6" y="34" font-family="Arial" font-weight="900" font-size="12" fill="white">GO</text>
+            <path d="M30 14 L37 21 L30 28" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:#fff;letter-spacing:2px;">HP GO</span>
+        </div>
+        <p>La super-app de livraison à la demande en Guinée. Restaurants, épicerie, pharmacie, boutiques, colis &amp; courses — livrés chez vous.</p>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
-        <a href="#services">Confirmation d'appel</a>
-        <a href="#services">Livraison express</a>
-        <a href="#services">Collecte cash</a>
-        <a href="#services">Stockage</a>
-        <a href="#services">CRM intégré</a>
+        <a href="#categories">Restaurants</a>
+        <a href="#categories">Épicerie &amp; marché</a>
+        <a href="#categories">Pharmacie</a>
+        <a href="#categories">Boutiques</a>
+        <a href="#categories">Colis &amp; courses</a>
       </div>
       <div class="footer-col">
-        <h5>Liens</h5>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#zones">Couverture</a>
+        <h5>HP GO</h5>
         <a href="#comment">Comment ça marche</a>
-        <a href="#temoignages">Témoignages</a>
-        <a href="#contact">Devenir partenaire</a>
+        <a href="#suivi">Suivi en temps réel</a>
+        <a href="#partenaires">Devenir livreur</a>
+        <a href="#partenaires">Inscrire mon commerce</a>
+        <a href="#faq">FAQ</a>
       </div>
       <div class="footer-col">
         <h5>Contact</h5>
-        <a href="https://wa.me/224621881210" target="_blank">📱 +224 621 88 12 10</a>
-        <a href="mailto:contact@hpcod.gn">✉️ contact@hpcod.gn</a>
-        <a href="#">📍 Conakry, Guinée</a>
+        <a href="https://wa.me/224621881210" target="_blank" rel="noopener">📱 +224 621 88 12 10</a>
+        <a href="mailto:contact@hpgo.gn">✉️ contact@hpgo.gn</a>
+        <a href="#zones">📍 Conakry, Guinée</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 HPCOD — Tous droits réservés · Conakry, Guinée 🇬🇳</p>
+      <p>© 2026 HP GO — Tous droits réservés · Conakry, Guinée 🇬🇳</p>
       <div class="footer-trio">
-        <span>HPCOD</span><span class="sep">·</span>
-        <span>HPSHOP</span><span class="sep">·</span>
-        <span>CRM HelpMeProcess</span>
+        <span>Livrer</span><span class="sep">·</span>
+        <span>Vendre</span><span class="sep">·</span>
+        <span>Commander</span>
       </div>
     </div>
   </div>
 </footer>
 
 <script>
-// Mobile menu
+// Menu mobile
 function toggleMenu(){
   const m = document.getElementById('mobNav');
-  m.classList.toggle('open');
+  const h = document.getElementById('hamburger');
+  const open = m.classList.toggle('open');
+  h.setAttribute('aria-expanded', open ? 'true' : 'false');
+  h.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
 }
 
-// Nav scroll shadow
+// Ombre nav au scroll
 window.addEventListener('scroll', ()=>{
   document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
 });
 
-// Reveal on scroll
+// Apparition au défilement
 const ro = new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});
 },{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
-// Animated counters
+// Compteurs animés
 function animateNum(el, target, suffix=''){
   let start = 0;
-  const dur = 1800;
+  const dur = 1600;
   const step = timestamp => {
     if(!start) start = timestamp;
     const p = Math.min((timestamp - start)/dur, 1);
@@ -961,14 +1113,14 @@ function animateNum(el, target, suffix=''){
   };
   requestAnimationFrame(step);
 }
-
 const statObs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
       const el = e.target;
       const t = parseInt(el.dataset.target);
-      const txt = el.innerHTML;
-      const suffix = txt.includes('%') ? '%' : txt.includes('h') ? 'h' : txt.includes('+') ? '+' : '';
+      const raw = el.innerHTML;
+      const m = raw.match(/<span>(.*?)<\/span>/);
+      const suffix = m ? m[1] : '';
       if(!isNaN(t)) animateNum(el, t, suffix);
       statObs.unobserve(el);
     }
@@ -976,18 +1128,26 @@ const statObs = new IntersectionObserver(entries=>{
 },{threshold:0.5});
 document.querySelectorAll('.stat-num[data-target]').forEach(el=>statObs.observe(el));
 
-// Contact form
+// FAQ accordéon
+function toggleFaq(btn){
+  const item = btn.parentElement;
+  const ans = item.querySelector('.faq-a');
+  const isOpen = item.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  ans.style.maxHeight = isOpen ? ans.scrollHeight + 'px' : '0';
+}
+
+// Formulaire → WhatsApp
 function submitContact(){
   const nom = document.getElementById('ctaNom').value.trim();
   const tel = document.getElementById('ctaTel').value.trim();
-  const boutique = document.getElementById('ctaBoutique').value.trim();
-  if(!nom || !tel || !boutique){
+  const zone = document.getElementById('ctaZone').value.trim();
+  if(!nom || !tel || !zone){
     alert('Veuillez remplir les champs obligatoires (*)');
     return;
   }
-  const site = document.getElementById('ctaSite').value.trim();
-  const volume = document.getElementById('ctaVolume').value;
-  const msg = `🚀 *Nouvelle demande partenaire HPCOD !*\n\n👤 Nom : ${nom}\n📞 Tél : ${tel}\n🏪 Boutique : ${boutique}${site ? '\n🔗 Site : ' + site : ''}${volume ? '\n📦 Volume : ' + volume : ''}\n\n⏰ ${new Date().toLocaleString('fr-FR')}`;
+  const besoin = document.getElementById('ctaBesoin').value;
+  const msg = `🛵 *Nouvelle demande HP GO !*\n\n👤 Nom : ${nom}\n📞 Tél : ${tel}\n📍 Zone : ${zone}${besoin ? '\n🛍️ Besoin : ' + besoin : ''}\n\n⏰ ${new Date().toLocaleString('fr-FR')}`;
   window.open('https://wa.me/224621881210?text=' + encodeURIComponent(msg), '_blank');
 }
 </script>

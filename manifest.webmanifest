@@ -1,0 +1,17 @@
+{
+  "name": "HP GO — Livraison à la demande en Guinée",
+  "short_name": "HP GO",
+  "description": "La super-app de livraison à la demande en Guinée : restaurants, épicerie, pharmacie, boutiques, colis et courses livrés chez vous.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "assets/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
